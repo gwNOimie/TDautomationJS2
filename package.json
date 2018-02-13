@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo test",
+    "pretest": "npm run qualityCheck && echo pretest",
+    "posttest": "echo posttest",
+    "qualityCheck" : "echo qualityCheck",
+    "prequalityCheck" : "echo prequalityCheck",
+    "postqualityCheck" : "echo postqualityCheck"
   },
   "repository": {
     "type": "git",
