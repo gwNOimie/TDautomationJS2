@@ -1,9 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+module.exports = [{
   entry: {
-    app:'./src/js/index.js'
+    front:'./src/front/js/index.js',
   },
   output: {
     filename: '[name].[chunkhash].js',
@@ -20,6 +20,15 @@ module.exports = {
     }]
   },
   plugins: [new HtmlWebpackPlugin({
-    template: 'src/html/index.html'
+    template: 'src/front/html/index.html'
   })]
-};
+},{
+  entry: {
+    back:'./src/back/app.js'
+  },
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'public')
+  },
+  target: 'node',
+}];
