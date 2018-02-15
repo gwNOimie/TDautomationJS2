@@ -8,7 +8,7 @@
     "prestart": "npm run build",
     "build": "webpack",
     "prebuild": "rimraf public",
-    "docker": "docker build -t tdautomationjs2"
+    "docker": "docker build -t tdautomationjs2 ."
   },
   "repository": {
     "type": "git",

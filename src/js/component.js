@@ -14,6 +14,6 @@ export default class {
     console.log(e);
     const value = document.querySelector('#inputNumber').value;
     console.log(value);
-    document.querySelector('#result').innerHTML=this.lib.cube(value);
+    document.querySelector('#result').innerHTML = this.lib.cube(value);
   }
 }
