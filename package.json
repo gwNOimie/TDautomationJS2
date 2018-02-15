@@ -7,7 +7,8 @@
     "start": "node app.js",
     "prestart": "npm run build",
     "build": "webpack",
-    "prebuild": "rimraf public"
+    "prebuild": "rimraf public",
+    "docker": "docker build -t tdautomationjs2"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
+    "docker-build": "^2.2.0",
+    "docker-build-run-push": "^3.0.0",
     "html-webpack-plugin": "^2.30.1",
     "rimraf": "^2.6.2",
     "webpack": "^3.11.0"
